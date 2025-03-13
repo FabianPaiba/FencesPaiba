@@ -1,4 +1,3 @@
-
 *{ box-sizing: border-box;}
 .hero{
     width: 100%;
@@ -92,9 +91,9 @@ z-index: 100;
 }
 .services img{
     width: 50px;
-   
 }
-.services{
+.services,
+.portafolio{
     width: 100%;
     height: 50%;
     position: relative;
@@ -118,44 +117,72 @@ z-index: 100;
 .about{
 
     background-color: #8f8f8f;
-}   
+} 
+.portafolio  .row{
+justify-content: center;
+}  
 .portafolio  .card{
-
-    width: 450px;
-    height: 300px;
+    height: 250px; 
+    padding: 0;
+    margin: 30px;
+    
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 30px;
-    border-radius: 15px;
-    
 }
-.portafolio .card:first-child{
+
+.portafolio .card1{
     background-image:url(../img/portafolio1.jpg) ;
-
 }
- .portafolio .card:nth-child(2){
+.portafolio .card2{
     background-image:url(../img/portafolio2.jpg) ;
-
 }
-.portafolio .card:nth-child(3){
+.portafolio .card3{
     background-image:url(../img/portafolio3.jpg) ;
 }
-.portafolio .card:nth-child(4){
+.portafolio .card4{
     background-image:url(../img/portafolio4.jpg) ;
 }
-.portafolio .card:nth-child(5){
+.portafolio .card5{
     background-image:url(../img/portafolio5.jpg) ;
 }
-.portafolio .card:nth-child(6){
+.portafolio .card6{
     background-image:url(../img/portafolio6.jpg) ;
 }
 
 
 
-@media screen and ( max-width: 989px ){
+@media screen and ( max-width: 709px ){
     .about-container img{
-      margin-top: 40px;
+    margin-top: 40px;
     }
+    .portafolio{
+        width: 100%;
+        height: ;
+        position: relative;
+        display: grid;
+        color: #fff;
+    
+    }
+    .portafolio  .card{
+        height: 300px;
+        width: 500px;
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+        
+        
+    }
+
     
 }
